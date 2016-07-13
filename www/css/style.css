@@ -1,0 +1,70 @@
+/* Empty. Add your own CSS if you like */
+
+.disabilitar {
+
+	display: none;
+	visibility: hidden;
+
+}
+
+.background-cor {
+
+	background-color: #18AFA0;
+
+}
+
+.img-logo {
+
+	height: 280px;
+	width: 280px;
+
+	display: block;
+
+	margin: auto;
+
+	margin-top: 80px;
+
+}
+
+.login {
+
+	width: 80%;
+
+	margin: auto;
+
+	margin-top: 30px;
+
+	border-radius: 5px;
+
+}
+
+.botoes {
+
+	width: 100%;
+
+	margin-top: 40px;
+
+
+}
+
+.botao {
+
+	float: left;
+
+	width: 35%;
+
+	display: inline-block;
+
+	margin-left: 11%;
+
+}
+
+#direita {
+
+	float: right;
+
+	margin-right: 11%;
+
+	margin-left: 0;
+}
+
