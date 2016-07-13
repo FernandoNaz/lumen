@@ -5,41 +5,42 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 
-  .controller('EntradaCtrl', function($scope){
 
-      
+.config(function($stateProvider, $urlRouterProvider) {
 
-
+  $stateProvider
+  .state('login', {
+    url: "/login",
+    templateUrl: 'templates/login.html',
+    controller: 'LoginCtrl'
+  })
+  .state('cadastro', {
+    url: "/cadastro",
+    templateUrl: 'templates/cadastro.html',
+    controller: "CadastroCtrl"
   })
 
+  ;
 
+  $urlRouterProvider.otherwise('login');
 
+})
 
+.controller('EntradaCtrl', function($scope) {
 
+})
 
+.controller('LoginCtrl', function($scope) {
 
+  $scope.title = "Login";
 
+})
 
+.controller("CadastroCtrl", function($scope) {
 
+  $scope.title = "Cadastro";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
 
 
 .run(function($ionicPlatform) {
